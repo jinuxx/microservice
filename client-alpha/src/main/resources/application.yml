@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: client-alpha
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    fetch-registry: false # 是否从其他注册中心拉取注册信息
+    service-url:
+      default-zone: http://localhost:8761/eureka

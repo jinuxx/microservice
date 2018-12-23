@@ -1,0 +1,8 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false  # 关闭自我保护机制，当client下线之后，心跳检测后会下线client，不能在正式环境里关闭
