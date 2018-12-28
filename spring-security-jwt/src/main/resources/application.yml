@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-security-jwt
+
+  datasource:
+    url: jdbc:mysql://111.231.101.203:53306/jinuxx?charset=utf8mb4&useSSL=false
+    username: root
+    password: xj747394103
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#  profiles:
+#    active: dev
+
+
+#
+#eureka:
+#  client:
+#    fetch-registry: false # 是否从其他注册中心拉取注册信息
+#    service-url:
+#      default-zone: http://localhost:8761/eureka
